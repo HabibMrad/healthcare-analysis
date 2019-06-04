@@ -1,0 +1,26 @@
+---
+title: "S3Practice"
+author: "Daniel Garrett"
+date: "June 4, 2019"
+output: html_document
+---
+Load AWS libraries
+```{r}
+library("aws.s3")
+library("aws.ec2metadata")
+```
+
+
+Get public data from a public S3 bucket.
+```{r}
+drug_poisoning <- read.csv("https://test-bucket-daniel-888.s3-us-west-2.amazonaws.com/NCHS_-_Drug_Poisoning_Mortality_by_State__United_States.csv", sep=',')
+```
+
+```{r}
+head(drug_poisoning)
+```
+
+```{r}
+
+```
+
